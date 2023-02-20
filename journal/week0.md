@@ -18,7 +18,14 @@ Here is proof of the working command **'aws get-caller-identity'** within Gitpod
 ### Creating a Billing Alarm using AWS Management Console
 Following Chirag's weekly pricing considerations video, I was able to create a billing alarm 
 
-### Creating a Budget using AWS Management Console
+![Proof-of-Billing-Alarm](assets/Week-0-Budgets.png)
+
+### Creating a Budget via AWS CLI
+I took upon the challenge of creating a budget of $5 USD via the CLI. I used the JSON [Templates](https://github.com/aki23gup/aws-bootcamp-cruddur-2023/tree/main/aws/json) to create a budget and a notification subscription. 
+
+I also created another budget to watch and monitor my credit spend.
+
+![Proof-of-Budgets](assets/Week-0-Billing-Alarm.png)
 
 ### Creating Environment Variables for AWS credentials in Gitpod
 I created environment variables for my AWS credentials and added them to my Gitpod account.
