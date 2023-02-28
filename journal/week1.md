@@ -10,7 +10,7 @@ I created the Dockerfile's for both [Backend](https://github.com/aki23gup/aws-bo
 
 Since backend and frontend are seperate containers, we need a way to orchestrate between the two to have a functioning application. This is where Docker Compose steps in as it allows defining and running multi-container applications. 
 
-I created the [Docker-Compose](https://github.com/aki23gup/aws-bootcamp-cruddur-2023/blob/main/docker-compose.yml) file, where the URL of both the containers are defined for it to run appropriately. Now, the two containers are orchestrated and work in tandem once the 'Docker Compose' cli command is run in the Gitpod environment.
+I created the [Docker-Compose](https://github.com/aki23gup/aws-bootcamp-cruddur-2023/blob/main/docker-compose.yml) file, where the URL of both the containers are defined for it to run appropriately. Now, the two containers are orchestrated and work in tandem once the 'Docker Compose Up' cli command is run in the Gitpod environment.
 
 ### Develop the Notification Endpoint feature 
 #### Flask Endpoint for Notifications
@@ -21,3 +21,5 @@ Wrote the backend endpoint for the Notifications page by adding [This](https://g
 Implemented frontend for the Notifications page by adding [This](https://github.com/aki23gup/aws-bootcamp-cruddur-2023/commit/f2c787b82ee490d25f5a631182180b84dd1c55ca) to the app.js file
 
 ### Creating DynamoDB and Postgres Containers
+
+Added [this](https://github.com/aki23gup/aws-bootcamp-cruddur-2023/commit/8f00a9a451492f626a16e25ca374fce0d046c182) to the docker-compose and gitpod.yml files to install dynamodb and postgres in the containers. 
