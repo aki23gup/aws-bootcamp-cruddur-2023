@@ -20,7 +20,7 @@ The code to create a mock span for testing, added to the file 'home_activities.p
 
 Once we visited the backend page on a browser, we are able to record a span trace in the Honeycomb logs:
 
-![](assets/Week2-Honeycomb)
+![](assets/Week2-Honeycomb.png)
 
 ### Instrumenting AWS X-Ray 
 
@@ -50,8 +50,10 @@ Rollbar is another great tool that allows for error log tracking. It helps monit
 
 Navigating to the '/api/activities/home' link on the browser we can see the following error:
 
-![](assets/Week2-Rollbar-Browser)
+![](assets/Week2-Rollbar-Browser.png)
 
 Now, we can head over to the Rollbar service to see if it was able to log that error we just forced. Sure enough, we can see an error logged!
 
-![](assets/Week2-Rollbar)
+![](assets/Week2-Rollbar.png)
+
+That calls for an end to the homework for this week! I hope we can run into more issues going ahead (for testing), so we can make use of these observability tools. 
