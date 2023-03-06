@@ -46,5 +46,12 @@ Note: The code is commented out to again, save ourselves from incurring costs. I
 
 ### Integrating Rollbar for Error Logging
 
-Rollbar is another gre
-![]()
+Rollbar is another great tool that allows for error log tracking. It helps monitor all errors and track the application code for easier identification and resolving of issues. We added [this](https://github.com/aki23gup/aws-bootcamp-cruddur-2023/commit/95c541080b34f0881dfb44571d37471244a51026) to the code to incorporate Rollbar tool into the app. To test an error, we took out the 'return' statement from the home_activities.py code, we should lead to an error.
+
+Navigating to the '/api/activities/home' link on the browser we can see the following error:
+
+![](assets/Week2-Rollbar-Browser)
+
+Now, we can head over to the Rollbar service to see if it was able to log that error we just forced. Sure enough, we can see an error logged!
+
+![](assets/Week2-Rollbar)
