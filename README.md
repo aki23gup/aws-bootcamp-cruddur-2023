@@ -31,3 +31,9 @@ The `/journal` directory contains
 - [ ] [Week 11](journal/week11.md)
 - [ ] [Week 12](journal/week12.md)
 - [ ] [Week 13](journal/week13.md)
+
+export CONNECTION_URL="postgresql://postgres:password@localhost:5432/cruddur"
+gp env CONNECTION_URL="postgresql://postgres:password@localhost:5432/cruddur"
+
+export PROD_CONNECTION_URL="postgresql://cruddurroot:testing123@cruddur-db-instance.cpxfzfmszzfm.ca-central-1.rds.amazonaws.com:5432/cruddur"
+gp env PROD_CONNECTION_URL="postgresql://cruddurroot:testing123@cruddur-db-instance.cpxfzfmszzfm.ca-central-1.rds.amazonaws.com:5432/cruddur"
