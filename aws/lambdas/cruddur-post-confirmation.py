@@ -42,19 +42,3 @@ def lambda_handler(event, context):
           conn.close()
           print('Database connection closed.')
     return event
-  7  
-backend-flask/db/schema.sql
-Comment on this file
-@@ -5,9 +5,10 @@ DROP TABLE IF EXISTS public.activities;
-
-CREATE TABLE public.users (
-  uuid UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
-  display_name text,
-  handle text,
-  cognito_user_id text,
-  display_name text NOT NULL,
-  handle text NOT NULL,
-  email text NOT NULL,
-  cognito_user_id text NOT NULL,
-  created_at TIMESTAMP default current_timestamp NOT NULL
-);
