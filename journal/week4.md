@@ -17,4 +17,4 @@
 ### Implement a postgres client for python using a connection pool
 ![]()
 ### Implement a Lambda that runs in a VPC and commits code to RDS
-![]()
+![](assets/Week4-Post-Confirmation.png)
