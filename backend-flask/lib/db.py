@@ -2,7 +2,7 @@ from psycopg_pool import ConnectionPool
 import os
 import re
 import sys
-from flask import current_app as current_app
+from flask import current_app as app
 
 class Db:
   def __init__(self):
@@ -45,7 +45,7 @@ class Db:
 
     pattern = r"\bRETURNING\b"
     is_returning_id = re.search(pattern, sql)
-    
+
     try:
       with self.pool.connection() as conn:
         cur =  conn.cursor()
@@ -68,7 +68,7 @@ class Db:
         json = cur.fetchone()
         return json[0]
   # When we want to return an array of json objects
-    def query_object_json(self,sql,params={}):
+  def query_object_json(self,sql,params={}):
 
     self.print_sql('json',sql)
     self.print_params(params)
