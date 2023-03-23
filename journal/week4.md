@@ -20,3 +20,5 @@
 ### Creating Activity
 ![](assets/Week4-CrudPost.png)
 ![](assets/Week4-Crud-DB-Check.png)
+### Issue: User Handle Appearance
+[This](https://github.com/aki23gup/aws-bootcamp-cruddur-2023/commit/83c74ac356edb1ea0706f8e891a646503d6b20f1)
